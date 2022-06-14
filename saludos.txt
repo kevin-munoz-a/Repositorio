@@ -1,3 +1,4 @@
 añadir 
 (main) $ git add .
-(main) % git commit -m "Hola mundo"
+(main) $ git commit -m "Hola mundo"
+(main) $ git push origin main
