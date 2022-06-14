@@ -1,0 +1,3 @@
+añadir 
+(main) $ git add .
+(main) % git commit -m "Hola mundo"
