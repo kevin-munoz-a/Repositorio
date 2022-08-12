@@ -1,4 +1,15 @@
-añadir 
+    añadir 
+
 (main) $ git add .
-(main) $ git commit -m "Hola mundo"
+(main) $ git commit -m "Mensaje o comentario"
 (main) $ git push origin main
+
+    cambios
+
+(main) $ git push
+
+    Clonar
+
+(main) $ git clone (URL=HTTPS)
+entrar a la carpeta creada
+copiar o cambiar cosas
