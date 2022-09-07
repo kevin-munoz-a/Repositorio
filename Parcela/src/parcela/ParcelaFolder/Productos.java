@@ -1,67 +1,77 @@
-
 package parcela.ParcelaFolder;
 
 
 public class Productos {
-    public int Codigo;
-    public String SubCategoria;
-    public String Descripcion;
-    public int Precio;
-    public int Unidad_gramos;
-    
-    public Productos() {
+    private int Codigo;
+    private String SubCategoria;
+    private String Descripcion;
+    private int Precio;
+    private int Cantidad;
+    private String Medida;
+
+    public Productos(int Codigo, String SubCategoria, String Descripcion, int Precio, int Cantidad, String Medida) {
         this.Codigo=0;
         this.SubCategoria="";
         this.Descripcion="";
         this.Precio=0;
-        this.Unidad_gramos=0;
+        this.Cantidad=0;
+        this.Medida="";
     }  
-    
-    
-    
-    
+
+
+
+
     public int getCodigo() {
         return this.Codigo;
     } 
     public void setCodigo(int Codigo) {
         this.Codigo = Codigo;
     }
-    
-    
-    
-    
+
+
+
+
     public String getSubCategoria() {
         return this.SubCategoria;
     }
     public void setSubCategoria(String SubCategoria) {
         this.SubCategoria = SubCategoria;
     }
-    
-    
-    
+
+
+
     public String getDescripcion() {
         return this.Descripcion;
     }
     public void setDescripcion(String Descripcion) {
         this.Descripcion = Descripcion;
     }
-    
-    
-    
+
+
+
     public int getPrecio() {
         return this.Precio;
     }
     public void setPrecio(int Precio) {
         this.Precio = Precio;
     }
-    
-    
-    
-    public int getUnidad_gramos(){
-        return this.Unidad_gramos;
+
+
+
+    public int getCantidad(){
+        return this.Cantidad;
     }
-    public void setUnidad_gramos(int Unidad_gramos){
-        this.Unidad_gramos = Unidad_gramos;
+    public void setCantidad(int Cantidad){
+        this.Cantidad = Cantidad;
     }
     
+    
+    
+    public String getMedida() {
+        return this.Medida;
+    }
+    public void setMedida(String Medida) {
+        this.Medida = Medida;
+    }
+
 }
