@@ -1,0 +1,80 @@
+
+package parcela.ParcelaFolder;
+import java.util.Date;
+
+    public class Solicitud {
+    private int Numero;
+    private Date Fecha;
+    private Cliente Cliente;
+    private int Total;
+    private String Productos;
+
+    public Solicitud() {
+        this.Numero=0;
+        this.Fecha = new Date();
+        this.Cliente = new Cliente();
+        this.Total = 0;
+        this.Productos = "";
+            
+    }
+
+    public Solicitud(int Numero, Date Fecha, Cliente Cliente, int Total, String Productos) {
+        this.Numero = Numero;
+        this.Fecha = Fecha;
+        this.Cliente = Cliente;
+        this.Total = Total;
+        this.Productos = Productos;
+    }
+
+    public int getNumero() {
+        return Numero;
+    }
+
+    public Date getFecha() {
+        return Fecha;
+    }
+
+    public Cliente getCliente() {
+        return Cliente;
+    }
+
+    public int getTotal() {
+        return Total;
+    }
+
+    public String getProductos() {
+        return Productos;
+    }
+
+    public void setNumero(int Numero) {
+        this.Numero = Numero;
+    }
+
+    public void setFecha(Date Fecha) {
+        this.Fecha = Fecha;
+    }
+
+    public void setCliente(Cliente Cliente) {
+        this.Cliente = Cliente;
+    }
+
+    public void setTotal(int Total) {
+        this.Total = Total;
+    }
+
+    public void setProductos(String Productos) {
+        this.Productos = Productos;
+    }
+
+   public void AgregarProducto(Productos producto) {
+       if(this.Productos != "") {
+           this.Productos += ";";
+       }
+       this.Productos += producto.toString();
+       //o usar //this.Producto = this.Producto + " " + producto.toString
+       
+       //Sumar al total del valor
+       this.Total += producto.getPrecio();
+   }
+   
+}

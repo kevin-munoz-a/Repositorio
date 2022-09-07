@@ -1,0 +1,28 @@
+import java.util.Date;
+import parcela.ParcelaFolder.Solicitud;
+import parcela.ParcelaFolder.Productos;
+
+public class Parcela {
+    public static void main(String[] args) {
+        
+        Productos p = new Productos();
+        p.setCodigo(100);
+        p.setDescripcion("Zanahoria");
+        p.setPrecio(890);
+        p.setCantidad(1000);
+        p.setMedida("Unidad");
+           
+        
+        Solicitud s = new Solicitud();
+        Date Fecha = new Date(122, 06. 03);
+        s.setFecha(Fecha);
+        
+        s.AgregarProducto(p);
+        System.out.println(s.getTotal());
+        a.AgregarProducto(p1);
+        System.out.println(s.getProductos());
+        System.out.println(s.get)
+        
+        System.out.println(s.getFecha());
+    }    
+}
