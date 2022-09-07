@@ -9,7 +9,7 @@ public class Productos {
     private int Cantidad;
     private String Medida;
 
-    public Productos(int Codigo, String SubCategoria, String Descripcion, int Precio, int Cantidad, String Medida) {
+     public Productos() {
         this.Codigo=0;
         this.SubCategoria="";
         this.Descripcion="";
@@ -17,8 +17,15 @@ public class Productos {
         this.Cantidad=0;
         this.Medida="";
     }  
-
-
+    
+    public Productos(int Codigo, String SubCategoria, String Descripcion, int Precio, int Cantidad, String Medida) {
+        this.Codigo=Codigo;
+        this.SubCategoria=SubCategoria;
+        this.Descripcion=Descripcion;
+        this.Precio=Precio;
+        this.Cantidad=Cantidad;
+        this.Medida=Medida;
+    }  
 
 
     public int getCodigo() {
