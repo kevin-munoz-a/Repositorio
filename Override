@@ -1,0 +1,12 @@
+@Override
+public String getChip(); {
+  String ChipOriginal = super.getChip();
+  return "ChipPerro-123-"+ChipOriginal;
+}
+
+----------------------------
+
+
+public class Frutas extends Tipo_producto {
+
+}
